@@ -1,1 +1,11 @@
-<p>generic works!</p>
+<div class="row m-2">
+    <div class="col border" *ngFor="let generic of genVect">
+        <div>
+            {{generic.emoji}}
+            <div class="text-info">{{generic.name}}</div>
+        </div>
+    </div>
+</div>
+
+<li class="nav-item nav-link" [routerLink]="['/generic', 'animals']" routerLinkActive="active-menu"> Animals</li>
+<li class="nav-item nav-link" [routerLink]="['/generic', 'fruits']" routerLinkActive="active-menu"> Fruits</li>
