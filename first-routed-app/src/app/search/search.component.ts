@@ -10,7 +10,7 @@ import { SpotifyService } from '../spotify.service';
 export class SearchComponent  {
   query: string | undefined;
   title = 'first-routed-app';
-  obsTrack: Observable<Object>;
+  obsTrack: Observable<Object> | undefined;
   results: any;
   // faccio iniettare lo spotify service e faccio una ricerca
   constructor(public spotify: SpotifyService) {
